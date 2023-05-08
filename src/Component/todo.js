@@ -26,21 +26,21 @@ function TodoList() {
   };
 
   return (
-    <div>
+    <div className="todo-list">
       <h1>Todo List</h1>
-      <input type="text" value={newTodo} onChange={handleNewTodoChange} />
-      <button onClick={handleAddTodo}>Add Todo</button>
+      <div className="add-todo">
+        <input type="text" value={newTodo} onChange={handleNewTodoChange} />
+        <button onClick={handleAddTodo}>Add Todo</button>
+      </div>
       <ul>
         {todos.map((todo, index) => (
-          <li key={index}>
+          <li key={index} className={todo.completed ? 'completed' : ''}>
             <input
               type="checkbox"
               checked={todo.completed}
               onChange={() => handleToggleTodo(index)}
             />
-            <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
-              {todo.text}
-            </span>
+            <span>{todo.text}</span>
             <button onClick={() => handleDeleteTodo(index)}>Delete</button>
           </li>
         ))}
