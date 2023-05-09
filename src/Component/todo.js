@@ -1,3 +1,5 @@
+/* eslint-disable react/no-array-index-key */
+
 import React, { useState } from 'react';
 
 function TodoList() {
@@ -30,7 +32,7 @@ function TodoList() {
       <h1>Todo List</h1>
       <div className="add-todo">
         <input type="text" value={newTodo} onChange={handleNewTodoChange} />
-        <button onClick={handleAddTodo}>Add Todo</button>
+        <button onClick={handleAddTodo} type="submit">Add Todo</button>
       </div>
       <ul>
         {todos.map((todo, index) => (
@@ -41,7 +43,7 @@ function TodoList() {
               onChange={() => handleToggleTodo(index)}
             />
             <span>{todo.text}</span>
-            <button onClick={() => handleDeleteTodo(index)}>Delete</button>
+            <button onClick={() => handleDeleteTodo(index)} type="submit">Delete</button>
           </li>
         ))}
       </ul>
