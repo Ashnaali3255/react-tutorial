@@ -87,8 +87,8 @@ git clone: https://github.com/Ashnaali3255/react-tutorial.git
 
 👤 **Ashna Ali**
 
-- GitHub: [@githubhandle](https://github.com/Ashnaali3255)
-- Twitter: [@twitterhandle](@Ashna_Ali1)
+- GitHub: [Github](https://github.com/Ashnaali3255)
+- Twitter: [Twitter](@Ashna_Ali1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ashna-ali-342151255/)
 
 
